@@ -1,11 +1,6 @@
 :root {
   --mainColor: #5d5d4d;
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 body {
   font-family: "Fustat", sans-serif;
 }
@@ -34,7 +29,7 @@ body {
   margin-top: 20px;
   position: absolute;
   left: 10px;
-  top: 70%;
+  top: 45%;
 }
 .changeCitys select {
   background-color: var(--mainColor);
@@ -48,7 +43,7 @@ body {
     left: 0;
   }
   .changeCitys select {
-    width: 120px;
+    width: 100px;
   }
 }
 .content-city .changeCitys > button,
