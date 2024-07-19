@@ -1,0 +1,80 @@
+:root {
+  --mainColor: #5d5d4d;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Fustat", sans-serif;
+}
+.contentApp {
+  background-image: url("/img/pexels-pashal-337904.jpg");
+  background-size: cover;
+  background-position: center right;
+  min-height: 100vh;
+  position: relative;
+  z-index: 2;
+}
+.contentApp::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0 0 0 / 60%);
+  z-index: -1;
+}
+.content-city {
+  position: relative;
+}
+.content-city .changeCitys {
+  margin-top: 20px;
+  position: absolute;
+  left: 10px;
+  top: 70%;
+}
+.changeCitys select {
+  background-color: var(--mainColor);
+  border: none;
+  width: 200px;
+  color: white;
+  outline: none;
+}
+@media (max-width: 768px) {
+  .content-city .changeCitys {
+    left: 0;
+  }
+  .changeCitys select {
+    width: 120px;
+  }
+}
+.content-city .changeCitys > button,
+.content-city .changeCitys > button:active {
+  background-color: var(--mainColor);
+}
+.box_times {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.box_times .content .box {
+  width: 11rem;
+  background-color: #f5f6fa;
+  margin-top: 2rem;
+  transition: 0.4s ease;
+}
+
+.box_times .content .box h1 {
+  background-color: var(--mainColor);
+}
+.history span {
+  background-color: var(--mainColor);
+  width: fit-content;
+}
+.time_prayer {
+  background-color: #121210a1;
+  padding: 5px;
+}
